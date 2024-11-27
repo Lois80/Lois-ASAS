@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Currency</title>
+</head>
+<body>
+    <h1>Add New Currency</h1>
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="symbol">Symbol:</label>
+        <input type="text" id="symbol" name="symbol" required>
+        <br>
+        <label for="rate">Rate:</label>
+        <input type="number" id="rate" name="rate" required step="0.01">
+        <br>
+        <button type="submit">Add Currency</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Currency List</a>
+</body>
+</html>
